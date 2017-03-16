@@ -1,0 +1,6 @@
+# eureka 服务端地址
+eureka:
+  client:
+    serviceUrl:
+      # 配置中心获取
+      defaultZone: http://localhost:1111/eureka/

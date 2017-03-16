@@ -1,0 +1,6 @@
+res:
+  prefix: eps
+rel:
+  suffix: nmp
+config:
+  defaultZone: http://localhost:1111/eureka/

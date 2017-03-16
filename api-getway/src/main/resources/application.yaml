@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: api-gateway
+server:
+  port: 10088
+
+# 路由规则
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: service-A
+    api-b:
+      path: /api-b/**
+      serviceId: service-B
+
+#配置中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
